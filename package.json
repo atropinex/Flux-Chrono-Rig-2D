@@ -1,0 +1,45 @@
+{
+  "name": "bonecraft",
+  "productName": "Bonecraft",
+  "version": "0.1.0",
+  "description": "2D skeletal animation editor with Cocos Creator and Unity runtimes",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "dist": "electron-vite build && electron-builder"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3",
+    "electron-vite": "^2.3.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.5",
+    "vitest": "^2.0.5"
+  },
+  "build": {
+    "appId": "com.bonecraft.editor",
+    "productName": "Bonecraft",
+    "files": [
+      "out/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "allowScripts": {
+    "electron@31.7.7": true,
+    "esbuild@0.21.5": true
+  }
+}
