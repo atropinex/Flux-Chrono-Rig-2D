@@ -12,7 +12,7 @@ function createWindow(): void {
     minWidth: 1100,
     minHeight: 700,
     backgroundColor: '#20242b',
-    title: 'Bonecraft',
+    title: 'Chrono Rig 2D',
     autoHideMenuBar: true,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),

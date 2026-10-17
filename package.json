@@ -1,7 +1,7 @@
 {
-  "name": "bonecraft",
-  "productName": "Bonecraft",
-  "version": "0.1.0",
+  "name": "Chrono Rig 2D",
+  "productName": "Chrono Rig 2D",
+  "version": "0.0.1",
   "description": "2D skeletal animation editor with Cocos Creator and Unity runtimes",
   "main": "./out/main/index.js",
   "scripts": {
@@ -13,10 +13,12 @@
     "dist": "electron-vite build && electron-builder"
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@electron-forge/maker-squirrel": "^8.0.1",
     "@types/node": "^20.14.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -29,8 +31,8 @@
     "vitest": "^2.0.5"
   },
   "build": {
-    "appId": "com.bonecraft.editor",
-    "productName": "Bonecraft",
+    "appId": "com.chronorig2d.editor",
+    "productName": "Chrono Rig 2D",
     "files": [
       "out/**/*"
     ],

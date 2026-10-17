@@ -1,4 +1,3 @@
-// Bonecraft runtime for Unity 2021.3+
 // Requires the package: com.unity.nuget.newtonsoft-json
 //
 // Pose maths is identical to the editor (model/Pose.ts). The editor is y-down / clockwise,

@@ -39,7 +39,7 @@ export function buildBundle(p: Project, target: ExportTarget): { folder: string;
     return {folder: `${base}_${target}`, files}
 }
 
-const COCOS_README = (base: string): string => `Bonecraft export for Cocos Creator 3.x
+const COCOS_README = (base: string): string => `Chrono Rig 2D export for Cocos Creator 3.x
 
 1. Copy this whole folder into assets/resources/${base}/  (it MUST be under "resources").
 2. In the editor, select each image in images/ and set its Type to "sprite-frame".
@@ -51,7 +51,7 @@ const COCOS_README = (base: string): string => `Bonecraft export for Cocos Creat
 Scripting: node.getComponent(Sk2dAnimator).play('walk', true)
 `
 
-const UNITY_README = (base: string): string => `Bonecraft export for Unity 2021.3+
+const UNITY_README = (base: string): string => `Chrono Rig 2D export for Unity 2021.3+
 
 1. Install Newtonsoft Json: Package Manager > Add package by name > com.unity.nuget.newtonsoft-json
 2. Copy this folder into Assets/${base}/

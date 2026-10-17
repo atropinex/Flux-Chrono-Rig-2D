@@ -28,9 +28,9 @@ export function parseProject(text: string): Project {
     } catch {
         throw new Error('This file is not valid JSON.')
     }
-    if (!raw || raw.format !== PROJECT_FORMAT) throw new Error('This is not a Bonecraft project file.')
+    if (!raw || raw.format !== PROJECT_FORMAT) throw new Error('This is not a Chrono Rig 2D project file.')
     if (typeof raw.version !== 'number' || raw.version > PROJECT_VERSION)
-        throw new Error('This project was saved by a newer version of Bonecraft.')
+        throw new Error('This project was saved by a newer version of Chrono Rig 2D.')
     for (const key of ['bones', 'slots', 'assets', 'animations']) {
         if (!Array.isArray(raw[key])) throw new Error(`Project is missing "${key}".`)
     }

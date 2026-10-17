@@ -1,5 +1,5 @@
 /**
- * Bonecraft runtime for Cocos Creator 3.x
+ * Chrono Rig 2D runtime for Cocos Creator 3.x
  *
  * Plays a *.sk2d.json skeleton. Add this component to a node, assign the JSON,
  * set "Images Path" (relative to assets/resources) and an animation name.
