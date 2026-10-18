@@ -1,6 +1,6 @@
 {
-  "name": "Chrono Rig 2D",
-  "productName": "Chrono Rig 2D",
+  "name": "ChronoRig2D",
+  "productName": "ChronoRig2D",
   "version": "0.0.1",
   "description": "2D skeletal animation editor with Cocos Creator and Unity runtimes",
   "main": "./out/main/index.js",
@@ -18,7 +18,9 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^8.0.1",
     "@electron-forge/maker-squirrel": "^8.0.1",
+    "@electron-forge/maker-zip": "^8.0.1",
     "@types/node": "^20.14.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -32,7 +34,7 @@
   },
   "build": {
     "appId": "com.chronorig2d.editor",
-    "productName": "Chrono Rig 2D",
+    "productName": "ChronoRig2D",
     "files": [
       "out/**/*"
     ],
